@@ -1,0 +1,10 @@
+# Environments
+venv/
+__pycache__
+.vscode
+config.py
+env.py
+
+# Flask stuff:
+instance/
+.webassets-cache
