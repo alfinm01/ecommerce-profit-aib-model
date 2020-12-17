@@ -1,8 +1,10 @@
-from flask import Flask, request, jsonify, render_template, redirect
+from flask import Flask, request, jsonify
+from flask_cors import CORS
 import pickle
 import numpy as np
 
 app = Flask(__name__)
+CORS(app)
 model = pickle.load(open('mlr_model.pkl', 'rb'))
 
 # constants (in usd)
